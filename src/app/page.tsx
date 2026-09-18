@@ -204,6 +204,72 @@ Combined men &amp; women training floor</li>
 </div>
 </section>
 <!-- END: MembershipSection -->
+<section class="py-20 bg-[#0a0a0a] border-t border-zinc-800 relative overflow-hidden scroll-mt-24" data-purpose="student-transformations" id="transformations">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-amber-500 block mb-1">PROVEN COACHING RESULTS</span>
+<h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">REAL MEMBER PHYSIQUE TRANSFORMATIONS</h2>
+</div>
+<div class="flex gap-2 mt-4 sm:mt-0">
+<span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold rounded flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trophy" aria-hidden="true" class="lucide lucide-trophy w-3.5 h-3.5 text-amber-400"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2"></path><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2"></path><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3"></path></svg> STUDENT SUCCESS STORIES</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Student Physique Card 0 (New Featured Transformation) -->
+<div class="bg-[#121212] rounded-lg border border-amber-500/50 overflow-hidden hover:border-amber-500 transition-all shadow-xl shadow-amber-500/15 group flex flex-col justify-between">
+<div class="relative h-96 overflow-hidden bg-black flex items-center justify-center">
+<img alt="Shredded Conditioning &amp; Aesthetic Symmetry" class="w-full h-full object-cover object-top filter contrast-110 group-hover:scale-105 transition-transform duration-500" src="/images/gym-09.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-gradient-to-r from-amber-400 to-amber-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider shadow-md">PEAK PHYSIQUE &amp; CONDITIONING</span>
+<div class="absolute bottom-3 left-4 right-4">
+<span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">SHREDDED CORE &amp; SERRATUS</span>
+<h4 class="text-lg font-black text-white uppercase">AESTHETIC SYMMETRY</h4>
+</div>
+</div>
+<div class="p-5 border-t border-zinc-800">
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Intense conditioning protocols, single-digit body fat refinement, and strict dietary discipline mentored under Coach Md. Rajib.</p>
+<div class="flex items-center justify-between text-[11px] pt-3 border-t border-zinc-800/80 font-semibold">
+<span class="text-amber-400 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle w-3.5 h-3.5 text-amber-400"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> Coach Md. Rajib Mentorship</span>
+<span class="text-gray-400 font-mono text-[10px]">TONGI ATHLETE</span>
+</div>
+</div>
+</div>
+<!-- Student Physique Card 1 -->
+<div class="bg-[#121212] rounded-lg border border-zinc-800 overflow-hidden hover:border-amber-500/60 transition-all shadow-xl shadow-amber-500/10 group flex flex-col justify-between">
+<div class="relative h-96 overflow-hidden bg-black flex items-center justify-center">
+<img alt="Back &amp; V-Taper Development" class="w-full h-full object-cover object-center filter contrast-110 group-hover:scale-105 transition-transform duration-500" src="/images/gym-10.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-amber-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider shadow-md">BACK &amp; V-TAPER DEVELOPMENT</span>
+<div class="absolute bottom-3 left-4 right-4">
+<span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">LAT SPREAD &amp; DENSITY</span>
+<h4 class="text-lg font-black text-white uppercase">POSTERIOR CHAIN FOCUS</h4>
+</div>
+</div>
+<div class="p-5 border-t border-zinc-800">
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Dedicated compound pulling mechanics, hyper-focused lats engagement, and strict progressive loading under head coach supervision.</p>
+<div class="flex items-center justify-between text-[11px] pt-3 border-t border-zinc-800/80 font-semibold">
+<span class="text-amber-400 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle w-3.5 h-3.5 text-amber-400"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> Coach Md. Rajib Mentorship</span>
+<span class="text-gray-400 font-mono text-[10px]">TONGI ATHLETE</span>
+</div>
+</div>
+</div>
+<!-- Student Physique Card 2 -->
+<div class="bg-[#121212] rounded-lg border border-amber-500/40 overflow-hidden hover:border-amber-500 transition-all shadow-xl shadow-amber-500/20 group flex flex-col justify-between">
+<div class="relative h-96 overflow-hidden bg-black flex items-center justify-center">
+<img alt="Hypertrophy &amp; Shredded 6-Pack Abs" class="w-full h-full object-cover object-center filter contrast-110 group-hover:scale-105 transition-transform duration-500" src="/images/gym-11.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+<span class="absolute top-3 left-3 bg-gradient-to-r from-amber-400 to-amber-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider shadow-md">HYPERTROPHY &amp; SHREDDED</span>
+<div class="absolute bottom-3 left-4 right-4">
+<span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">ABS &amp; BICEP PEAK CONDITIONING</span>
+<h4 class="text-lg font-black text-white uppercase">LEAN MASS TRANSFORMATION</h4>
+</div>
+</div>
+<div class="p-5 border-t border-zinc-800">
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Targeted caloric deficit paired with peak hypertrophy lifting splits to expose vascularity, shredded core definition, and arm peak symmetry.</p>
+<div class="flex items-center justify-between text-[11px] pt-3 border-t border-zinc-800/80 font-semibold">
+<span class="text-amber-400 flex items-center gap-1"></span></div></div></div><div class="bg-[#121212] rounded-lg border border-amber-500/40 overflow-hidden hover:border-amber-500 transition-all shadow-xl shadow-amber-500/10 group flex flex-col justify-between"><div class="relative h-96 overflow-hidden bg-black flex items-center justify-center"><img alt="Back Muscularity &amp; Lat Development" class="w-full h-full object-cover object-center filter contrast-110 group-hover:scale-105 transition-transform duration-500" src="/images/gym-12.jpg"><div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div><span class="absolute top-3 left-3 bg-amber-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider shadow-md">BACK MUSCULARITY &amp; LATS</span><div class="absolute bottom-3 left-4 right-4"><span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">LAT SPREAD &amp; POSTERIOR DENSITY</span><h4 class="text-lg font-black text-white uppercase">V-TAPER PHYSIQUE</h4></div></div><div class="p-5 border-t border-zinc-800"><p class="text-xs text-gray-400 leading-relaxed mb-4">Deltoid cap development and upper-back thickness built on consistent progressive overload and specialized postural form execution.</p><div class="flex items-center justify-between text-[11px] pt-3 border-t border-zinc-800/80 font-semibold"><span class="text-amber-400 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle w-3.5 h-3.5 text-amber-400"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> Coach Md. Rajib Mentorship</span><span class="text-gray-400 font-mono text-[10px]">TONGI ATHLETE</span></div></div></div></div></div></section>
+
 <!-- BEGIN: VerifiedFacilitiesSection -->
 <section class="py-20 bg-[#0f0f0f] border-t border-zinc-800 scroll-mt-24" data-purpose="gym-facilities" id="facilities">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -338,19 +404,19 @@ Combined men &amp; women training floor</li>
 <!-- Section Header -->
 <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
 <div>
-<span class="text-xs font-bold uppercase tracking-widest text-amber-500 block mb-1">COACHING CALIBER</span>
-<h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">SENIOR STRENGTH MEMBERS</h2>
+<span class="text-xs font-bold uppercase tracking-widest text-amber-500 block mb-1">MEET THE FOUNDERS</span>
+<h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">THE OWNERS BEHIND FITNESS PARK</h2>
 </div>
 <div class="flex gap-2 mt-4 sm:mt-0">
 <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold rounded">15+ YEARS EXPERIENCE COACH</span>
-<span class="px-3 py-1 bg-zinc-800 text-gray-300 text-xs font-bold rounded">3 EXPERIENCED COACHES</span>
+<span class="px-3 py-1 bg-zinc-800 text-gray-300 text-xs font-bold rounded">2 OWNERS &amp; FOUNDERS</span>
 </div>
 </div>
 <!-- Coach Cards Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
 <!-- Coach 1: Head Coach & National Champion -->
 <div class="bg-zinc-900/80 rounded-lg border border-amber-500/40 p-6 flex flex-col justify-between hover:border-amber-500 transition-all shadow-lg shadow-amber-500/10 relative">
-<div class="absolute -top-3 left-4 bg-amber-500 text-black font-extrabold text-[10px] px-2.5 py-0.5 rounded uppercase tracking-wider">HEAD COACH</div>
+<div class="absolute -top-3 left-4 bg-amber-500 text-black font-extrabold text-[10px] px-2.5 py-0.5 rounded uppercase tracking-wider">OWNER &amp; HEAD COACH</div>
 <div>
 <div class="rounded overflow-hidden mb-4 border border-zinc-800 relative h-52">
 <img alt="National Champion &amp; Head Coach" class="w-full h-full object-cover object-top" src="/images/gym-06.jpg">
@@ -370,52 +436,34 @@ Combined men &amp; women training floor</li>
 <span class="text-[10px] text-zinc-500 font-mono">14+ HRS ON-FLOOR</span>
 </div>
 </div>
-<!-- Coach 2: Senior Strength & Bodybuilding Coach -->
-<div class="bg-zinc-900/80 rounded-lg border border-zinc-800 p-6 flex flex-col justify-between hover:border-amber-500/50 transition-all">
+<!-- Owner 2: Dr. Himel -->
+<div class="bg-zinc-900/80 rounded-lg border border-amber-500/40 p-6 flex flex-col justify-between hover:border-amber-500 transition-all shadow-lg shadow-amber-500/10 relative">
+<div class="absolute -top-3 left-4 bg-amber-500 text-black font-extrabold text-[10px] px-2.5 py-0.5 rounded uppercase tracking-wider">OWNER</div>
 <div>
 <div class="rounded overflow-hidden mb-4 border border-zinc-800 relative h-52">
-<img alt="Senior Strength Coach" class="w-full h-full object-cover object-center" src="/images/gym-07.jpg">
+<img alt="Fitness Park Gym Owner Dr. Himel" class="w-full h-full object-cover object-top" src="/images/Owner dr himel.jpeg">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-<div class="absolute bottom-2 left-2 bg-black/80 text-white font-extrabold text-xs px-2.5 py-1 rounded border border-zinc-700">STRENGTH MEMBERS <span class="text-amber-400 text-[10px] font-normal">| FITNESS PARK</span></div>
+<div class="absolute bottom-2 left-2 bg-black/80 text-white font-extrabold text-xs px-2.5 py-1 rounded border border-zinc-700">CO-OWNER &amp; HEALTH DIRECTOR <span class="text-amber-400 text-[10px] font-normal">| FITNESS PARK</span></div>
 </div>
-<h3 class="text-lg font-bold text-white uppercase mb-1">Senior Strength Members</h3>
-<p class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-3">Senior Strength &amp; Bodybuilding Coach</p>
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Focuses on heavy compound lifts, progressive overload sequencing, muscular density development, and rigorous technique execution across all skill levels.</p>
+<h3 class="text-lg font-bold text-white uppercase mb-1">Dr. Himel</h3>
+<p class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-3">Co-Owner &amp; Health Director</p>
+<p class="text-xs text-gray-400 leading-relaxed mb-4">Guides member health, injury prevention, and safe training practice across the men&rsquo;s and women&rsquo;s floors so every member can train hard without risking wellbeing.</p>
 <div class="p-2.5 rounded bg-black/60 border border-zinc-800 text-[11px] space-y-1 mb-4">
-<div class="flex justify-between"><span class="text-gray-400">Specialty:</span><span class="text-gray-200 font-semibold">Strength &amp; Conditioning</span></div>
-<div class="flex justify-between"><span class="text-gray-400">Floor Schedule:</span><span class="text-amber-400 font-semibold">Afternoon &amp; Peak Evening</span></div>
+<div class="flex justify-between"><span class="text-gray-400">Specialty:</span><span class="text-gray-200 font-semibold">Health &amp; Wellness</span></div>
+<div class="flex justify-between"><span class="text-gray-400">Coverage:</span><span class="text-amber-400 font-semibold">Men&rsquo;s &amp; Women&rsquo;s Floors</span></div>
 </div>
 </div>
 <div class="pt-3 border-t border-zinc-800 flex items-center justify-between text-[11px] text-gray-300 font-semibold">
-<span class="flex items-center gap-1.5 text-amber-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="dumbbell" aria-hidden="true" class="lucide lucide-dumbbell w-4 h-4"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z"></path><path d="m2.5 21.5 1.4-1.4"></path><path d="m20.1 3.9 1.4-1.4"></path><path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z"></path><path d="m9.6 14.4 4.8-4.8"></path></svg> COMPOUND LIFTS</span>
-<span class="text-[10px] text-zinc-500 font-mono">FORM SCRUTINY</span>
+<span class="flex items-center gap-1.5 text-amber-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="activity" aria-hidden="true" class="lucide lucide-activity w-4 h-4"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg> HEALTH &amp; WELLNESS</span>
+<span class="text-[10px] text-zinc-500 font-mono uppercase">SAFE TRAINING</span>
 </div>
 </div>
-<!-- Coach 3: Functional Fitness & Nutrition Specialist -->
-<div class="bg-zinc-900/80 rounded-lg border border-zinc-800 p-6 flex flex-col justify-between hover:border-amber-500/50 transition-all"><div>
-<div class="rounded overflow-hidden mb-4 border border-zinc-800 relative h-52">
-<img alt="Fitness Park Gym Annual Anniversary Program Celebration" class="w-full h-full object-cover object-center" src="/images/gym-08.jpg">
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-<div class="absolute bottom-2 left-2 bg-black/80 text-white font-extrabold text-xs px-2.5 py-1 rounded border border-zinc-700">ANNUAL CELEBRATION <span class="text-amber-400 text-[10px] font-normal">| FITNESS PARK</span></div>
-</div>
-<h3 class="text-lg font-bold text-white uppercase mb-1">ANNUAL GYM ANNIVERSARY PROGRAM</h3>
-<p class="text-xs font-bold text-amber-400 uppercase tracking-wide mb-3">YEARLY CELEBRATION, T-SHIRTS, FOOD &amp; AWARDS</p>
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Fitness Park Gym organizes a grand Annual Anniversary Program once every year. The celebration features official gym anniversary T-shirts, special food and refreshments, exciting fitness competitions, member awards, and trophy distribution.</p>
-<div class="p-2.5 rounded bg-black/60 border border-zinc-800 text-[11px] space-y-1 mb-4">
-<div class="flex justify-between"><span class="text-gray-400">Frequency:</span><span class="text-gray-200 font-semibold">Once Every Year (Annual)</span></div>
-<div class="flex justify-between"><span class="text-gray-400">Highlights:</span><span class="text-amber-400 font-semibold">Custom T-Shirts, Grand Feast &amp; Fitness Contests</span></div>
-</div>
-</div>
-<div class="pt-3 border-t border-zinc-800 flex items-center justify-between text-[11px] text-gray-300 font-semibold">
-<span class="flex items-center gap-1.5 text-amber-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="award" aria-hidden="true" class="lucide lucide-award w-4 h-4"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg> ANNUAL CELEBRATION</span>
-<span class="text-[10px] text-zinc-500 font-mono uppercase">COMMUNITY EVENT</span>
-</div></div>
 </div>
 <div class="mt-8 pt-6 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4 bg-zinc-900/60 p-4 rounded-lg border">
 <div class="flex items-center gap-4 text-xs">
 <div class="px-3 py-1.5 bg-black border border-zinc-800 rounded text-center">
 <span class="text-gray-400 block text-[10px]">ON-FLOOR COACHING STAFF</span>
-<span class="text-amber-400 font-bold uppercase">3 EXPERIENCED COACHES</span>
+<span class="text-amber-400 font-bold uppercase">2 OWNER COACHES</span>
 </div>
 <div class="hidden sm:block text-gray-400 text-xs">
 Direct hands-on supervision, custom workout splits, and posture correction daily.
@@ -429,71 +477,7 @@ Consult With Coaches: +880 1922-749473
 </section>
 <!-- END: CoachesSection -->
 <!-- BEGIN: GymGallerySection -->
-<section class="py-20 bg-[#0a0a0a] border-t border-zinc-800 relative overflow-hidden scroll-mt-24" data-purpose="student-transformations" id="transformations">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
-<div>
-<span class="text-xs font-bold uppercase tracking-widest text-amber-500 block mb-1">PROVEN COACHING RESULTS</span>
-<h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">REAL MEMBER PHYSIQUE TRANSFORMATIONS</h2>
-</div>
-<div class="flex gap-2 mt-4 sm:mt-0">
-<span class="px-3 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold rounded flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trophy" aria-hidden="true" class="lucide lucide-trophy w-3.5 h-3.5 text-amber-400"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2"></path><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2"></path><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3"></path></svg> STUDENT SUCCESS STORIES</span>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Student Physique Card 0 (New Featured Transformation) -->
-<div class="bg-[#121212] rounded-lg border border-amber-500/50 overflow-hidden hover:border-amber-500 transition-all shadow-xl shadow-amber-500/15 group flex flex-col justify-between">
-<div class="relative h-96 overflow-hidden bg-black flex items-center justify-center">
-<img alt="Shredded Conditioning &amp; Aesthetic Symmetry" class="w-full h-full object-cover object-top filter contrast-110 group-hover:scale-105 transition-transform duration-500" src="/images/gym-09.jpg">
-<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
-<span class="absolute top-3 left-3 bg-gradient-to-r from-amber-400 to-amber-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider shadow-md">PEAK PHYSIQUE &amp; CONDITIONING</span>
-<div class="absolute bottom-3 left-4 right-4">
-<span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">SHREDDED CORE &amp; SERRATUS</span>
-<h4 class="text-lg font-black text-white uppercase">AESTHETIC SYMMETRY</h4>
-</div>
-</div>
-<div class="p-5 border-t border-zinc-800">
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Intense conditioning protocols, single-digit body fat refinement, and strict dietary discipline mentored under Coach Md. Rajib.</p>
-<div class="flex items-center justify-between text-[11px] pt-3 border-t border-zinc-800/80 font-semibold">
-<span class="text-amber-400 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle w-3.5 h-3.5 text-amber-400"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> Coach Md. Rajib Mentorship</span>
-<span class="text-gray-400 font-mono text-[10px]">TONGI ATHLETE</span>
-</div>
-</div>
-</div>
-<!-- Student Physique Card 1 -->
-<div class="bg-[#121212] rounded-lg border border-zinc-800 overflow-hidden hover:border-amber-500/60 transition-all shadow-xl shadow-amber-500/10 group flex flex-col justify-between">
-<div class="relative h-96 overflow-hidden bg-black flex items-center justify-center">
-<img alt="Back &amp; V-Taper Development" class="w-full h-full object-cover object-center filter contrast-110 group-hover:scale-105 transition-transform duration-500" src="/images/gym-10.jpg">
-<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
-<span class="absolute top-3 left-3 bg-amber-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider shadow-md">BACK &amp; V-TAPER DEVELOPMENT</span>
-<div class="absolute bottom-3 left-4 right-4">
-<span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">LAT SPREAD &amp; DENSITY</span>
-<h4 class="text-lg font-black text-white uppercase">POSTERIOR CHAIN FOCUS</h4>
-</div>
-</div>
-<div class="p-5 border-t border-zinc-800">
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Dedicated compound pulling mechanics, hyper-focused lats engagement, and strict progressive loading under head coach supervision.</p>
-<div class="flex items-center justify-between text-[11px] pt-3 border-t border-zinc-800/80 font-semibold">
-<span class="text-amber-400 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle w-3.5 h-3.5 text-amber-400"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> Coach Md. Rajib Mentorship</span>
-<span class="text-gray-400 font-mono text-[10px]">TONGI ATHLETE</span>
-</div>
-</div>
-</div>
-<!-- Student Physique Card 2 -->
-<div class="bg-[#121212] rounded-lg border border-amber-500/40 overflow-hidden hover:border-amber-500 transition-all shadow-xl shadow-amber-500/20 group flex flex-col justify-between">
-<div class="relative h-96 overflow-hidden bg-black flex items-center justify-center">
-<img alt="Hypertrophy &amp; Shredded 6-Pack Abs" class="w-full h-full object-cover object-center filter contrast-110 group-hover:scale-105 transition-transform duration-500" src="/images/gym-11.jpg">
-<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
-<span class="absolute top-3 left-3 bg-gradient-to-r from-amber-400 to-amber-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider shadow-md">HYPERTROPHY &amp; SHREDDED</span>
-<div class="absolute bottom-3 left-4 right-4">
-<span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">ABS &amp; BICEP PEAK CONDITIONING</span>
-<h4 class="text-lg font-black text-white uppercase">LEAN MASS TRANSFORMATION</h4>
-</div>
-</div>
-<div class="p-5 border-t border-zinc-800">
-<p class="text-xs text-gray-400 leading-relaxed mb-4">Targeted caloric deficit paired with peak hypertrophy lifting splits to expose vascularity, shredded core definition, and arm peak symmetry.</p>
-<div class="flex items-center justify-between text-[11px] pt-3 border-t border-zinc-800/80 font-semibold">
-<span class="text-amber-400 flex items-center gap-1"></span></div></div></div><div class="bg-[#121212] rounded-lg border border-amber-500/40 overflow-hidden hover:border-amber-500 transition-all shadow-xl shadow-amber-500/10 group flex flex-col justify-between"><div class="relative h-96 overflow-hidden bg-black flex items-center justify-center"><img alt="Back Muscularity &amp; Lat Development" class="w-full h-full object-cover object-center filter contrast-110 group-hover:scale-105 transition-transform duration-500" src="/images/gym-12.jpg"><div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div><span class="absolute top-3 left-3 bg-amber-500 text-black font-extrabold text-[10px] px-2.5 py-1 rounded uppercase tracking-wider shadow-md">BACK MUSCULARITY &amp; LATS</span><div class="absolute bottom-3 left-4 right-4"><span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest block">LAT SPREAD &amp; POSTERIOR DENSITY</span><h4 class="text-lg font-black text-white uppercase">V-TAPER PHYSIQUE</h4></div></div><div class="p-5 border-t border-zinc-800"><p class="text-xs text-gray-400 leading-relaxed mb-4">Deltoid cap development and upper-back thickness built on consistent progressive overload and specialized postural form execution.</p><div class="flex items-center justify-between text-[11px] pt-3 border-t border-zinc-800/80 font-semibold"><span class="text-amber-400 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check-circle" aria-hidden="true" class="lucide lucide-check-circle w-3.5 h-3.5 text-amber-400"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg> Coach Md. Rajib Mentorship</span><span class="text-gray-400 font-mono text-[10px]">TONGI ATHLETE</span></div></div></div></div></div></section><section class="py-20 bg-[#0e0e0e] border-t border-zinc-800 scroll-mt-24 overflow-hidden" data-purpose="gym-gallery" id="gallery">
+<section class="py-20 bg-[#0e0e0e] border-t border-zinc-800 scroll-mt-24 overflow-hidden" data-purpose="gym-gallery" id="gallery">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10">
 <div>

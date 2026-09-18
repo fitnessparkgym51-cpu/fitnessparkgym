@@ -17,7 +17,6 @@ const NAV_ITEMS: NavItem[] = [
   { name: "Membership", href: "#membership", badge: "Tk 500" },
   { name: "Programs", href: "#programs" },
   { name: "Trainers", href: "#trainers" },
-  { name: "Gallery", href: "#gallery", wide: true },
   { name: "BMI", href: "#bmi" },
   { name: "Contact", href: "#contact" },
 ];

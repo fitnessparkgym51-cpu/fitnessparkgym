@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   publisher: GYM_NAME,
   category: "Health & Fitness",
   verification: {
-    google: "pmkdLIS86_gh6wAbm3GWYE9rnmWPHPCaZHaMlZeceZA",
+    google: "Zvy_0TkaSYK71VYf0qvla8o_M47GmwQHpWKRBYBIPg4",
   },
   alternates: {
     canonical: SITE_URL,
