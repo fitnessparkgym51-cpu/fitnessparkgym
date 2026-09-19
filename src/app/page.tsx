@@ -9,7 +9,7 @@ const DESIGN_HTML = `
 <section class="relative min-h-[88vh] flex items-center justify-center text-center px-4 overflow-hidden scroll-mt-24" data-purpose="hero-section" id="home">
 <!-- Hero Background Image with Darkness Overlay -->
 <div class="absolute inset-0 z-0">
-<img alt="Monjurs Gym Tongi Athletes and Members" class="w-full h-full object-cover object-center filter brightness-75 contrast-125 scale-105 transform" src="/images/gym-02.jpg">
+<img alt="Members training on the gym floor at Fitness Park Gym in Tongi, Gazipur" fetchpriority="high" decoding="async" width="1600" height="900" class="w-full h-full object-cover object-center filter brightness-75 contrast-125 scale-105 transform" src="/images/gym-02.jpg">
 <div class="absolute inset-0 hero-overlay"></div>
 </div>
 <!-- Hero Central Content -->
@@ -26,7 +26,7 @@ const DESIGN_HTML = `
 <h1 class="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-white mb-2 leading-none">FITNESS PARK <span class="text-amber-500">GYM</span></h1>
 <p class="text-xl sm:text-2xl md:text-3xl font-bold tracking-wide uppercase gold-gradient-text mb-6">"A PERFECT PLACE FOR BODYBUILDING AND FITNESS"</p>
 <!-- Description Subtext -->
-<p class="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8 drop-shadow">Gazipur's elite athletic sanctuary engineered with a combined training environment for men and women, commercial-grade equipment, and proven coach discipline.</p>
+<p class="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8 drop-shadow">Widely rated the best gym in Tongi, our Gazipur facility offers a combined training environment for men and women, commercial-grade equipment, and proven coach discipline.</p>
 <!-- Call to Action Buttons -->
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
 <a class="w-full sm:w-auto px-8 py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-extrabold uppercase tracking-wider text-sm rounded shadow-lg shadow-amber-500/25 transition-all" href="#membership">
@@ -1022,7 +1022,7 @@ Consult With Coaches: +880 1922-749473
 <!-- Column 1: Identity -->
 <div>
 <div class="flex items-center gap-2 mb-3">
-<img src="/images/gym-18.jpg" alt="FITNESS PARK GYM Logo" class="w-8 h-8 rounded-full object-cover border border-amber-500 flex-shrink-0">
+<img src="/logo.png" alt="Fitness Park Gym logo" class="w-8 h-8 rounded-full object-cover border border-amber-500 flex-shrink-0">
 <div>
 <span class="text-base font-black text-amber-400 uppercase tracking-wider block leading-tight">FITNESS PARK GYM</span>
 <span class="text-[9px] text-gray-500 font-bold uppercase tracking-widest">TONGI, GAZIPUR</span>

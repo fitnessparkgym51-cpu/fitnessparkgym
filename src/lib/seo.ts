@@ -4,8 +4,11 @@ export const GYM_NAME = "Fitness Park Gym";
 export const GYM_ALT_NAME = "FITNESS PARK GYM";
 export const GYM_TAGLINE = "Tongi, Gazipur | Best Gym in Bangladesh";
 
+/** Primary <title> for the homepage. Brand first, then local intent. */
+export const SITE_TITLE = "Fitness Park Gym - Best Gym in Tongi";
+
 export const GYM_DESCRIPTION =
-  "Fitness Park Gym, Tongi, Gazipur is Bangladesh's trusted fitness center with champion trainers, modern gym equipment and bodybuilding programs from only ৳1,000/month. Open daily 7:00 AM – 11:00 PM.";
+  "Fitness Park Gym is a gym and fitness center in Tongi, Gazipur — strength training, bodybuilding and cardio with experienced coaches. Open daily 7:00 AM – 11:00 PM.";
 
 export const GYM_PHONE = "+8801922749473";
 export const GYM_PHONE_DISPLAY = "+880 1922-749473";
@@ -25,7 +28,7 @@ export const GYM_IMAGES = Array.from(
   (_, i) => `/images/gym-${String(i + 1).padStart(2, "0")}.jpg`
 );
 export const OG_IMAGE = `${SITE_URL}/opengraph-image`;
-export const LOGO_IMAGE = `${SITE_URL}/images/gym-01.jpg`;
+export const LOGO_IMAGE = `${SITE_URL}/logo.png`;
 
 export const GYM_KEYWORDS = [
   "fitness park gym",
@@ -59,10 +62,19 @@ export function organizationSchema(): JsonLdObject {
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
     name: GYM_NAME,
+    legalName: GYM_NAME,
     alternateName: GYM_ALT_NAME,
     url: SITE_URL,
-    logo: LOGO_IMAGE,
-    image: GYM_IMAGES.slice(0, 3).map((img) => `${SITE_URL}${img}`),
+    logo: {
+      "@type": "ImageObject",
+      "@id": `${SITE_URL}/#logo`,
+      url: LOGO_IMAGE,
+      contentUrl: LOGO_IMAGE,
+      width: 512,
+      height: 512,
+      caption: GYM_NAME,
+    },
+    image: { "@id": `${SITE_URL}/#logo` },
     description: GYM_DESCRIPTION,
     telephone: GYM_PHONE,
     address: {
@@ -82,6 +94,7 @@ export function webSiteSchema(): JsonLdObject {
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
     name: GYM_NAME,
+    alternateName: GYM_ALT_NAME,
     url: SITE_URL,
     description: GYM_DESCRIPTION,
     inLanguage: "en",
@@ -102,6 +115,7 @@ export function gymSchema(): JsonLdObject {
     name: GYM_NAME,
     alternateName: GYM_ALT_NAME,
     url: SITE_URL,
+    branchOf: { "@id": `${SITE_URL}/#organization` },
     logo: LOGO_IMAGE,
     image: GYM_IMAGES.map((img) => `${SITE_URL}${img}`),
     description: GYM_DESCRIPTION,

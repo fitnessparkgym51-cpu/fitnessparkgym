@@ -5,7 +5,7 @@ import {
   GYM_DESCRIPTION,
   GYM_KEYWORDS,
   GYM_NAME,
-  GYM_ALT_NAME,
+  SITE_TITLE,
   SITE_URL,
   breadcrumbSchema,
   faqSchema,
@@ -15,16 +15,16 @@ import {
 } from "@/lib/seo";
 import "./globals.css";
 
-const TITLE =
-  "Fitness Park Gym - Best Gym in Tongi, Gazipur | Bodybuilding & Fitness Center";
+const TITLE = SITE_TITLE;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: TITLE,
-    template: `%s | ${GYM_NAME} - Tongi, Gazipur`,
+    template: `%s | ${GYM_NAME}`,
   },
   applicationName: GYM_NAME,
+  authors: [{ name: GYM_NAME, url: SITE_URL }],
   description: GYM_DESCRIPTION,
   keywords: GYM_KEYWORDS,
   creator: GYM_NAME,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     google: "Zvy_0TkaSYK71VYf0qvla8o_M47GmwQHpWKRBYBIPg4",
   },
   alternates: {
-    canonical: SITE_URL,
+    canonical: "/",
   },
   robots: {
     index: true,
@@ -51,10 +51,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: "bn_BD",
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     siteName: GYM_NAME,
     title: TITLE,
     description: GYM_DESCRIPTION,
+  },
+  appleWebApp: {
+    capable: true,
+    title: GYM_NAME,
+    statusBarStyle: "black-translucent",
   },
   twitter: {
     card: "summary_large_image",
@@ -72,6 +77,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+        <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+      </head>
       <body className="bg-[#0a0a0a] text-gray-200 antialiased selection:bg-amber-500 selection:text-black">
         <JsonLd data={organizationSchema()} />
         <JsonLd data={webSiteSchema()} />
