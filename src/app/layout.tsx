@@ -116,7 +116,7 @@ tailwind.config = {
           }}
         />
         <Script
-          src="https://cdn.tailwindcss.com?plugins=forms,container-queries"
+          src="https://cdn.tailwindcss.com/3.4.17?plugins=forms@0.5.10,container-queries@0.1.1"
           strategy="beforeInteractive"
         />
       </body>
