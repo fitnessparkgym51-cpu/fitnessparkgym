@@ -56,53 +56,88 @@ type JsonLdObject = {
   [key: string]: unknown;
 };
 
-export function organizationSchema(): JsonLdObject {
+export type SeoOverrides = {
+  name?: string;
+  description?: string;
+  phone?: string;
+  streetAddress?: string;
+  locality?: string;
+  region?: string;
+  postalCode?: string;
+  country?: string;
+  mapUrl?: string;
+  logoUrl?: string;
+  imageUrls?: string[];
+  admissionFee?: number;
+  membershipPlans?: Array<{ name: string; price?: number; period?: string }>;
+  faq?: Array<{ question: string; answer: string }>;
+  breadcrumb?: Array<{ name: string; path: string }>;
+};
+
+export function organizationSchema(overrides: SeoOverrides = {}): JsonLdObject {
+  const name = overrides.name || GYM_NAME;
+  const description = overrides.description || GYM_DESCRIPTION;
+  const logo = overrides.logoUrl || LOGO_IMAGE;
+
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
-    name: GYM_NAME,
-    legalName: GYM_NAME,
+    name,
+    legalName: name,
     alternateName: GYM_ALT_NAME,
     url: SITE_URL,
     logo: {
       "@type": "ImageObject",
       "@id": `${SITE_URL}/#logo`,
-      url: LOGO_IMAGE,
-      contentUrl: LOGO_IMAGE,
+      url: logo,
+      contentUrl: logo,
       width: 512,
       height: 512,
-      caption: GYM_NAME,
+      caption: name,
     },
     image: { "@id": `${SITE_URL}/#logo` },
-    description: GYM_DESCRIPTION,
-    telephone: GYM_PHONE,
+    description,
+    telephone: overrides.phone || GYM_PHONE,
     address: {
       "@type": "PostalAddress",
-      streetAddress: GYM_STREET_ADDRESS,
-      addressLocality: GYM_LOCALITY,
-      addressRegion: GYM_REGION,
-      postalCode: GYM_POSTAL_CODE,
-      addressCountry: GYM_ADDRESS_COUNTRY,
+      streetAddress: overrides.streetAddress || GYM_STREET_ADDRESS,
+      addressLocality: overrides.locality || GYM_LOCALITY,
+      addressRegion: overrides.region || GYM_REGION,
+      postalCode: overrides.postalCode || GYM_POSTAL_CODE,
+      addressCountry: overrides.country || GYM_ADDRESS_COUNTRY,
     },
   };
 }
 
-export function webSiteSchema(): JsonLdObject {
+export function webSiteSchema(overrides: SeoOverrides = {}): JsonLdObject {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: GYM_NAME,
+    name: overrides.name || GYM_NAME,
     alternateName: GYM_ALT_NAME,
     url: SITE_URL,
-    description: GYM_DESCRIPTION,
+    description: overrides.description || GYM_DESCRIPTION,
     inLanguage: "en",
     publisher: { "@id": `${SITE_URL}/#organization` },
   };
 }
 
-export function gymSchema(): JsonLdObject {
+export function gymSchema(overrides: SeoOverrides = {}): JsonLdObject {
+  const name = overrides.name || GYM_NAME;
+  const description = overrides.description || GYM_DESCRIPTION;
+  const imageUrls = overrides.imageUrls?.length
+    ? overrides.imageUrls
+    : GYM_IMAGES.map((image) => `${SITE_URL}${image}`);
+  const plans = overrides.membershipPlans?.length
+    ? overrides.membershipPlans
+    : [
+        { name: "Starter", price: 1000, period: "admission" },
+        { name: "Standard", price: 1000, period: "per month" },
+        { name: "Premium", price: 2000, period: "per month" },
+      ];
+
   return {
     "@context": "https://schema.org",
     "@type": [
@@ -112,28 +147,28 @@ export function gymSchema(): JsonLdObject {
       "LocalBusiness",
     ],
     "@id": `${SITE_URL}/#gym`,
-    name: GYM_NAME,
+    name,
     alternateName: GYM_ALT_NAME,
     url: SITE_URL,
     branchOf: { "@id": `${SITE_URL}/#organization` },
-    logo: LOGO_IMAGE,
-    image: GYM_IMAGES.map((img) => `${SITE_URL}${img}`),
-    description: GYM_DESCRIPTION,
-    telephone: GYM_PHONE,
+    logo: overrides.logoUrl || LOGO_IMAGE,
+    image: imageUrls,
+    description,
+    telephone: overrides.phone || GYM_PHONE,
     address: {
       "@type": "PostalAddress",
-      streetAddress: GYM_STREET_ADDRESS,
-      addressLocality: GYM_LOCALITY,
-      addressRegion: GYM_REGION,
-      postalCode: GYM_POSTAL_CODE,
-      addressCountry: GYM_ADDRESS_COUNTRY,
+      streetAddress: overrides.streetAddress || GYM_STREET_ADDRESS,
+      addressLocality: overrides.locality || GYM_LOCALITY,
+      addressRegion: overrides.region || GYM_REGION,
+      postalCode: overrides.postalCode || GYM_POSTAL_CODE,
+      addressCountry: overrides.country || GYM_ADDRESS_COUNTRY,
     },
     geo: {
       "@type": "GeoCoordinates",
       latitude: GYM_GEO.latitude,
       longitude: GYM_GEO.longitude,
     },
-    hasMap: GYM_MAP_URL,
+    hasMap: overrides.mapUrl || GYM_MAP_URL,
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -150,7 +185,7 @@ export function gymSchema(): JsonLdObject {
         closes: GYM_CLOSE_TIME,
       },
     ],
-    priceRange: "৳1,000",
+    priceRange: overrides.admissionFee ? `৳${overrides.admissionFee}` : "৳1000",
     currenciesAccepted: "BDT",
     paymentAccepted: "Cash",
     amenityFeature: [
@@ -168,61 +203,39 @@ export function gymSchema(): JsonLdObject {
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Fitness Park Gym Membership Plans",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          name: "Monthly Membership",
-          price: "1000",
-          priceCurrency: "BDT",
-          url: `${SITE_URL}/#membership`,
-          itemOffered: {
-            "@type": "Service",
-            name: "1 Month Gym Membership",
-          },
+      itemListElement: plans.map((plan) => ({
+        "@type": "Offer",
+        name: plan.name,
+        price: String(plan.price || 0),
+        priceCurrency: "BDT",
+        url: `${SITE_URL}/#membership`,
+        itemOffered: {
+          "@type": "Service",
+          name: `${plan.name} Membership`,
         },
-        {
-          "@type": "Offer",
-          name: "Quarterly Membership (3 Months)",
-          price: "2500",
-          priceCurrency: "BDT",
-          url: `${SITE_URL}/#membership`,
-          itemOffered: {
-            "@type": "Service",
-            name: "3 Month Gym Membership",
-          },
-        },
-        {
-          "@type": "Offer",
-          name: "Half-Yearly Membership (6 Months)",
-          price: "4500",
-          priceCurrency: "BDT",
-          url: `${SITE_URL}/#membership`,
-          itemOffered: {
-            "@type": "Service",
-            name: "6 Month Gym Membership",
-          },
-        },
-      ],
+      })),
     },
   };
 }
 
-export function breadcrumbSchema(): JsonLdObject {
+export function breadcrumbSchema(overrides: SeoOverrides = {}): JsonLdObject {
+  const items = overrides.breadcrumb || [
+    { name: "Home", path: "/" },
+    { name: "Membership Plans", path: "/#membership" },
+    { name: "Gym Facilities", path: "/#facilities" },
+    { name: "Training Programs", path: "/#programs" },
+    { name: "Master Coaches & Trainers", path: "/#trainers" },
+    { name: "Contact & Location", path: "/#contact" },
+  ];
+
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      ["Home", "/"],
-      ["Membership Plans", "/#membership"],
-      ["Gym Facilities", "/#facilities"],
-      ["Training Programs", "/#programs"],
-      ["Master Coaches & Trainers", "/#trainers"],
-      ["Contact & Location", "/#contact"],
-    ].map(([name, path], index) => ({
+    itemListElement: items.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name,
-      item: `${SITE_URL}${path}`,
+      name: item.name,
+      item: `${SITE_URL}${item.path}`,
     })),
   };
 }
@@ -236,7 +249,7 @@ const FAQ_DATA: { question: string; answer: string }[] = [
   {
     question: "What are the membership prices at Fitness Park Gym?",
     answer:
-      "Fitness Park Gym membership packages are ৳1,000 per month, ৳2,500 for 3 months, and ৳4,500 for 6 months.",
+      "Fitness Park Gym membership packages start at ৳1,000 for admission, with monthly plans at ৳1,000 and ৳2,000.",
   },
   {
     question: "Is Fitness Park Gym a combined section for men and women?",
@@ -265,12 +278,14 @@ const FAQ_DATA: { question: string; answer: string }[] = [
   },
 ];
 
-export function faqSchema(): JsonLdObject {
+export function faqSchema(overrides: SeoOverrides = {}): JsonLdObject {
+  const faq = overrides.faq?.length ? overrides.faq : FAQ_DATA;
+
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "@id": `${SITE_URL}/#faq`,
-    mainEntity: FAQ_DATA.map(({ question, answer }) => ({
+    mainEntity: faq.map(({ question, answer }) => ({
       "@type": "Question",
       name: question,
       acceptedAnswer: {

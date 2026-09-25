@@ -1,13 +1,20 @@
 import type { MetadataRoute } from "next";
+import { getCmsData } from "@/sanity/client";
+import { localized } from "@/sanity/helpers";
 import { GYM_DESCRIPTION, GYM_NAME } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
-export default function manifest(): MetadataRoute.Manifest {
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
+  const { homepage, siteSettings } = await getCmsData();
+  const seo = homepage.seo || siteSettings.seo || {};
+  const name = localized(siteSettings.siteName, "en", GYM_NAME);
+  const description = localized(seo.description, "en", GYM_DESCRIPTION);
+
   return {
-    name: `${GYM_NAME} - Best Gym in Tongi`,
-    short_name: GYM_NAME,
-    description: GYM_DESCRIPTION,
+    name: `${name} - Best Gym in Tongi`,
+    short_name: name,
+    description,
     start_url: "/",
     display: "standalone",
     background_color: "#0a0a0a",
